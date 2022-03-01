@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(
+      89.2deg,
+      rgb(5, 120, 190) 3.3%,
+      rgb(119, 217, 211) 97.8%
+    );
+    width: 50%;
+    margin: 55px auto;
+    color: #ffffff;
+  }
+  
+  .icons {
+    display: block;
+    margin: 0 auto;
+    text-indent: 25px;
+  }
+  
+  .temperature {
+    color: #ffffff;
+  }
+  
+  a:link {
+    color: #ffffff;
+    text-decoration: none !important;
+  }
+  a:visited {
+    color: white;
+  }
+  
+  .units {
+    text-indent: 30px;
+    font-weight: bold;
+  }
+  
+  .miniTemp {
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  h1 {
+    display: block;
+    text-align: left;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 2;
+    margin: 0 auto;
+    padding: 10px;
+    text-indent: 20px;
+  }
+  
+  ul {
+    margin: 0 0 20px;
+    padding: 0px;
+    text-indent: 30px;
+  }
+  
+  li {
+    margin: 0 auto;
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 2;
+    list-style: none;
+  }
+  
+  .temp {
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 2;
+    padding: 13px;
+  }
+  
+  .col {
+    font-size: 24px;
+  }
+  
+  p {
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 2;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .fiveDay {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 2;
+    padding: 15px;
+    width: fit-content;
+  }
+  
+  .btn-primary,
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:visited {
+    background-color: rgb(5, 120, 190) !important;
+    width: 80px;
+    height: 38px;
+  }
+  
+  .btn-success,
+  .btn-success:hover,
+  .btn-success:active,
+  btn-success:visited {
+    border-radius: 4px;
+    display: block;
+    width: 80px;
+    height: 38px;
+    box-shadow: none;
+  }
+  
