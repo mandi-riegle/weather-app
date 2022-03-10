@@ -84,6 +84,7 @@ body {
   }
   
   .fiveDay {
+    margin: 0 auto;
     display: block;
     text-align: center;
     font-size: 14px;
@@ -97,11 +98,12 @@ body {
   .btn-primary:hover,
   .btn-primary:active,
   .btn-primary:visited {
-    background-color: #000000 !important;
+    background-color:  #ec6e4c  !important;
     width: 80px;
     height: 38px;
+    border: #ec6e4c;
   }
-  
+
   .btn-success,
   .btn-success:hover,
   .btn-success:active,
@@ -113,3 +115,12 @@ body {
     box-shadow: none;
   }
   
+  .btn-success, w-100{
+    background-color: black;
+    border: black;
+    box-shadow: none;
+  }
+
+  .btn-success:hover{
+    background-color: #1F1F1F;
+  }

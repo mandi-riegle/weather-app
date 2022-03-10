@@ -25,6 +25,9 @@ function formatDate(date) {
   
   function displayWeatherCondition(response) {
     let iconElement = document.querySelector("#icon");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+
     document.querySelector("#city").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(
       response.data.main.temp
@@ -36,6 +39,9 @@ function formatDate(date) {
     );
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
+
+      humidityElement.innerHTML = response.data.main.humidity;
+      windElement.innerHTML = Math.round(response.data.wind.speed);
 
       iconElement.setAttribute(
         "src",
