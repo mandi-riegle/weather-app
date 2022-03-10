@@ -1,9 +1,6 @@
 body {
-    background: linear-gradient(
-      89.2deg,
-      rgb(5, 120, 190) 3.3%,
-      rgb(119, 217, 211) 97.8%
-    );
+    background: linear-gradient(to right, #868f96 0%, #596164 100%);
+    
     width: 50%;
     margin: 55px auto;
     color: #ffffff;
@@ -100,7 +97,7 @@ body {
   .btn-primary:hover,
   .btn-primary:active,
   .btn-primary:visited {
-    background-color: rgb(5, 120, 190) !important;
+    background-color: #000000 !important;
     width: 80px;
     height: 38px;
   }
