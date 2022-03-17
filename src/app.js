@@ -198,13 +198,13 @@ celsiusLink.addEventListener("click", tempConversionCelsius);
 
 var currElem = null; 
 function BoldText(elem) {
-  if (elem != currElem) { 
+    if (elem != currElem) { 
     if (currElem)
-  currElem.style.fontWeight='normal';
+    currElem.style.fontWeight='normal';
     currElem = elem;
     elem.style.fontWeight='bold'; 
-  }
-}
+    }
+ }
 
 /************************************************************************* */
   let dateElement = document.querySelector("#date");
