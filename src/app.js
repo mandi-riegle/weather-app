@@ -23,7 +23,15 @@ function formatDate(date) {
     return `${day} ${hours}:${minutes}`;
   }
   
+  function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  
+    return days[day];
+  }
 
+/*********************************************************************** */
 
   function displayForecast(response) {
     let forecast = response.data.daily;
@@ -68,6 +76,7 @@ function formatDate(date) {
     axios.get(apiUrl).then(displayForecast);
   }
 
+  /*************************************************************************************** */
   
   function displayWeatherCondition(response) {
     let iconElement = document.querySelector("#icon");
@@ -123,10 +132,8 @@ function formatDate(date) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(searchLocation);
   }
-  
 
-
-
+/***************************************************************************************** */
 
   function displayFahrenheitTemperature(event) {
     event.preventDefault();
@@ -158,10 +165,48 @@ function formatDate(date) {
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
   
-
-
-
+/************************************************************************* */
   
+function tempConversionFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElementTwo = document.querySelector("weather-forecast-temperatures");
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperatureTwo = (celsiusTemperatureTwo * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperatureTwo);
+}
+
+function tempConversionCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElementTwo = document.querySelector("#weather-forecast-temperatures");
+  temperatureElement.innerHTML = Math.round(celsiusTemperatureTwo);
+}
+
+let celsiusTemperatureTwo = null;
+
+let formTwo = document.querySelector("#weather-forecast-temperatures");
+form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLinkTwo = document.querySelector("#weather-forecast-temperature-max");
+fahrenheitLink.addEventListener("click", tempConversionFahrenheit);
+
+let celsiusLinkTwo = document.querySelector("#weather-forecast-temperature-max");
+celsiusLink.addEventListener("click", tempConversionCelsius);
+
+var currElem = null; 
+function BoldText(elem) {
+  if (elem != currElem) { 
+    if (currElem)
+  currElem.style.fontWeight='normal';
+    currElem = elem;
+    elem.style.fontWeight='bold'; 
+  }
+}
+
+/************************************************************************* */
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
   dateElement.innerHTML = formatDate(currentTime);
@@ -172,15 +217,13 @@ function formatDate(date) {
     search(cityInputElement.value);
   }
   
-  
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", handleSubmit);
   
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
-
-
   
   searchCity("New York");
 
- 
+
+

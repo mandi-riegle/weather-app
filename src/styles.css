@@ -20,13 +20,13 @@ body {
     color: #ffffff;
     text-decoration: none !important;
   }
+
   a:visited {
     color: white;
   }
-  
+
   .units {
     text-indent: 30px;
-    font-weight: bold;
   }
   
   .miniTemp {
@@ -35,8 +35,10 @@ body {
     padding: 20px;
     color: #ffffff;
   }
-  
+
   h1 {
+    position: relative;
+    left: -30px;
     display: block;
     text-align: left;
     font-size: 40px;
@@ -44,10 +46,13 @@ body {
     line-height: 2;
     margin: 0 auto;
     padding: 10px;
+    padding-right: 150px;
     text-indent: 20px;
   }
   
   ul {
+    position: relative;
+    left: -30px;
     margin: 0 0 20px;
     padding: 0px;
     text-indent: 30px;
@@ -71,6 +76,10 @@ body {
   }
   
   .col {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    margin: 0 auto;
     font-size: 24px;
   }
   
