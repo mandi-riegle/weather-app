@@ -1,6 +1,5 @@
 body {
     background: linear-gradient(to right, #868f96 0%, #596164 100%);
-    
     width: 50%;
     margin: 55px auto;
     color: #ffffff;
@@ -20,29 +19,25 @@ body {
     color: #ffffff;
     text-decoration: none !important;
   }
-
   a:visited {
     color: white;
   }
-
+  
   .units {
     text-indent: 30px;
   }
   
   .miniTemp {
-    font-size: 18px;
-    text-align: left;
     padding: 20px;
     color: #ffffff;
   }
-
+  
   h1 {
     position: relative;
     left: -30px;
     display: block;
     text-align: left;
     font-size: 40px;
-    color: #ffffff;
     line-height: 2;
     margin: 0 auto;
     padding: 10px;
@@ -66,7 +61,7 @@ body {
     line-height: 2;
     list-style: none;
   }
-  
+
   .temp {
     text-align: left;
     font-size: 20px;
