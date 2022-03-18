@@ -34,7 +34,7 @@ body {
   
   h1 {
     position: relative;
-    left: -30px;
+    left: -23px;
     display: block;
     text-align: left;
     font-size: 40px;
@@ -47,7 +47,7 @@ body {
   
   ul {
     position: relative;
-    left: -30px;
+    left: -23px;
     margin: 0 0 20px;
     padding: 0px;
     text-indent: 30px;
@@ -91,11 +91,10 @@ body {
     margin: 0 auto;
     display: block;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff;
     line-height: 2;
-    padding: 15px;
-    width: fit-content;
+    padding: 20px;
   }
   
   .btn-primary,
