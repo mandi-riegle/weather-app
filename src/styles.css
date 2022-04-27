@@ -1,38 +1,69 @@
+  
+a:link {
+    color: #ffffff;
+    text-decoration: none !important;
+  }
+a:visited {
+    color: white;
+  }
+
 body {
     background: linear-gradient(to right, #868f96 0%, #596164 100%);
     width: 50%;
     margin: 55px auto;
     color: #ffffff;
   }
-  
-  .icons {
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color:  #ec6e4c  !important;
+    width: 80px;
+    height: 38px;
+    border: #ec6e4c;
+  }
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+ btn-success:visited {
+    border-radius: 4px;
     display: block;
+    width: 80px;
+    height: 38px;
+    box-shadow: none;
+  }
+  
+.btn-success, w-100{
+    background-color: black;
+    border: black;
+    box-shadow: none;
+  }
+
+.btn-success:hover{
+    background-color: #1F1F1F;
+  }
+
+.col {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
     margin: 0 auto;
-    text-indent: 25px;
+    font-size: 24px;
   }
-  
-  .temperature {
+
+.fiveDay {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 20px;
     color: #ffffff;
-  }
-  
-  a:link {
-    color: #ffffff;
-    text-decoration: none !important;
-  }
-  a:visited {
-    color: white;
-  }
-  
-  .units {
-    text-indent: 30px;
-  }
-  
-  .miniTemp {
+    line-height: 2;
     padding: 20px;
-    color: #ffffff;
   }
   
-  h1 {
+h1 {
     position: relative;
     left: -23px;
     display: block;
@@ -44,16 +75,14 @@ body {
     padding-right: 150px;
     text-indent: 20px;
   }
-  
-  ul {
-    position: relative;
-    left: -23px;
-    margin: 0 0 20px;
-    padding: 0px;
-    text-indent: 30px;
+
+.icons {
+    display: block;
+    margin: 0 auto;
+    text-indent: 25px;
   }
-  
-  li {
+
+li {
     margin: 0 auto;
     display: block;
     color: #ffffff;
@@ -62,23 +91,12 @@ body {
     list-style: none;
   }
 
-  .temp {
-    text-align: left;
-    font-size: 20px;
+.miniTemp {
+    padding: 20px;
     color: #ffffff;
-    line-height: 2;
-    padding: 13px;
   }
   
-  .col {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: flex-end;
-    margin: 0 auto;
-    font-size: 24px;
-  }
-  
-  p {
+p {
     text-align: left;
     font-size: 20px;
     color: #ffffff;
@@ -87,43 +105,38 @@ body {
     padding: 10px;
   }
   
-  .fiveDay {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
+  
+.temp {
+    text-align: left;
     font-size: 20px;
     color: #ffffff;
     line-height: 2;
-    padding: 20px;
-  }
-  
-  .btn-primary,
-  .btn-primary:hover,
-  .btn-primary:active,
-  .btn-primary:visited {
-    background-color:  #ec6e4c  !important;
-    width: 80px;
-    height: 38px;
-    border: #ec6e4c;
+    padding: 13px;
   }
 
-  .btn-success,
-  .btn-success:hover,
-  .btn-success:active,
-  btn-success:visited {
-    border-radius: 4px;
-    display: block;
-    width: 80px;
-    height: 38px;
-    box-shadow: none;
-  }
-  
-  .btn-success, w-100{
-    background-color: black;
-    border: black;
-    box-shadow: none;
+.temperature {
+    color: #ffffff;
   }
 
-  .btn-success:hover{
-    background-color: #1F1F1F;
+ul {
+    position: relative;
+    left: -23px;
+    margin: 0 0 20px;
+    padding: 0px;
+    text-indent: 30px;
   }
+
+.units {
+    text-indent: 30px;
+  }
+  
+  
+
+  
+
+  
+
+  
+
+
+  
